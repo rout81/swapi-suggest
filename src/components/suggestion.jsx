@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import { DetailsContext } from "../context/detailContext";
 
@@ -8,6 +8,7 @@ export const Suggestion = ({ characters }) => {
     <div className="suggestions">
       {characters.map((character) => (
         <div
+          className="suggestion"
           onClick={() => setCurrentCharacter(character)}
           key={character.name}
         >

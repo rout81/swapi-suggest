@@ -76,11 +76,17 @@ body {
   padding: 5px;
   text-transform: uppercase;
 }
-.suggestions div:hover {
-  background-color: #00b4cc;
-  color: #fff;
-}
 .suggestions a {
   text-decoration: none;
   color: #1f1f1f;
+}
+
+.suggestion:hover {
+  color: #fff;
+  background-color: #00b4cc;
+}
+
+.back {
+  position: absolute;
+  top: -40px;
 }
